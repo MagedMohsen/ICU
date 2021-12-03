@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="509.0" prefWidth="738.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainController">
+   <children>
+      <Pane prefHeight="103.0" prefWidth="744.0" style="-fx-background-color: #444444;">
+         <children>
+            <Text fill="WHITE" layoutX="329.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ICU Search">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="Logout" layoutX="644.0" layoutY="14.0" mnemonicParsing="false" onAction="#Logout" prefHeight="32.0" prefWidth="86.0" style="-fx-background-color: transparent;" text="Logout" textFill="WHITE" underline="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children></Pane>
+      <Text layoutX="81.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose City:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="exc_btn" layoutX="346.0" layoutY="158.0" mnemonicParsing="false" onAction="#exc" style="-fx-background-color: #1f8fe8;" text="Execute" textFill="WHITE" />
+      <Pane fx:id="HosPane" layoutX="-6.0" layoutY="197.0" prefHeight="313.0" prefWidth="744.0">
+         <children>
+            <Text layoutX="59.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hospital Name: " />
+            <Text layoutX="59.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ICU Beds: " />
+            <Text layoutX="59.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ventlators Available:" />
+            <Text layoutX="59.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address: " />
+            <Label fx:id="HosName" layoutX="211.0" layoutY="63.0" text="Label" />
+            <Label fx:id="ICU" layoutX="211.0" layoutY="107.0" text="Label" />
+            <Label fx:id="Vent" layoutX="211.0" layoutY="148.0" text="Label" />
+            <Label fx:id="Address" layoutX="211.0" layoutY="189.0" text="Label" />
+            <Button fx:id="bookbtn" layoutX="133.0" layoutY="248.0" mnemonicParsing="false" onAction="#book" style="-fx-background-color: #1f8fe8;" text="Book" textFill="WHITE" />
+            <Button fx:id="DailyRec" layoutX="614.0" layoutY="248.0" mnemonicParsing="false" onAction="#DailyRec" style="-fx-background-color: #1f8fe8;" text="Daily Record" textFill="WHITE" />
+         </children>
+      </Pane>
+      <ChoiceBox fx:id="City" layoutX="172.0" layoutY="158.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="main.DailyRecController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutY="-1.0" prefHeight="509.0" prefWidth="738.0">
+         <children>
+            <Pane prefHeight="103.0" prefWidth="744.0" style="-fx-background-color: #444444;">
+               <children>
+                  <Text fill="WHITE" layoutX="329.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Daily Record">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="Logout1" layoutX="644.0" layoutY="14.0" mnemonicParsing="false" onAction="#Logout" prefHeight="32.0" prefWidth="86.0" style="-fx-background-color: transparent;" text="Logout" textFill="WHITE" underline="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Text layoutX="131.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Day:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Button fx:id="exc_btn_dly" layoutX="346.0" layoutY="158.0" mnemonicParsing="false" onAction="#exc_dly" style="-fx-background-color: #1f8fe8;" text="Execute" textFill="WHITE" />
+            <Pane fx:id="HosPane" layoutX="-6.0" layoutY="197.0" prefHeight="313.0" prefWidth="744.0">
+               <children>
+                  <Text layoutX="64.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Positive" />
+                  <Text layoutX="64.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recovered" />
+                  <Text layoutX="64.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dead" />
+                  <Label fx:id="HosName" layoutX="216.0" layoutY="88.0" text="Label" />
+                  <Label fx:id="ICU" layoutX="216.0" layoutY="132.0" text="Label" />
+                  <Label fx:id="Vent" layoutX="216.0" layoutY="173.0" text="Label" />
+                  <Text layoutX="373.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Positive" />
+                  <Text layoutX="375.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Recovered" />
+                  <Text layoutX="375.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Deaths" />
+                  <Label fx:id="TPos" layoutX="524.0" layoutY="88.0" text="Label" />
+                  <Label fx:id="TRec" layoutX="524.0" layoutY="132.0" text="Label" />
+                  <Label fx:id="TDed" layoutX="524.0" layoutY="173.0" text="Label" />
+                  <Label fx:id="Active" layoutX="524.0" layoutY="217.0" text="Label" />
+                  <Text layoutX="372.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Active Cases" />
+               </children>
+            </Pane>
+            <ChoiceBox fx:id="Day" layoutX="172.0" layoutY="158.0" prefWidth="150.0" />
+            <Button fx:id="Today" layoutX="468.0" layoutY="159.0" mnemonicParsing="false" onAction="#Today" style="-fx-background-color: #1f8fe8;" text="Today" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
